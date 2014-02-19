@@ -1,0 +1,114 @@
+---
+title       : Task Stressors
+subtitle    : OHP
+author      : Shane Curtis
+job         : Student
+framework   : revealjs
+revealjs		: {theme: moon}
+widgets     : [bootstrap]   
+mode        : selfcontained
+ext_widgets	: {rCharts: [libraries/polycharts]}
+--- .class1 #id1 bg:lightblue
+
+## Overview
+
+> 1. What are Task Stressors?
+> 2. How do they differ from other types of stressors?
+> 3. Research Framework
+> 4. Research Findings
+
+---
+
+## What are Task Stressors?
+
+> - Workload
+>  - Quantitative vs. Qualitative
+>  - Mental vs. Physical
+>  - Objective vs. Perceived
+>  - Naturally-occuring vs. Experimentally-manipulated
+
+---
+
+## Quantitative vs. Qualitative
+
+> - Amount
+> - Difficulty
+
+---
+
+## How are they Studied
+
+> - Often studied alongside other stressors
+
+---
+
+## Potential Causes of Excessive Workload
+
+> - Work Environment
+> - Individual Difference
+
+---
+
+## Work Environment
+
+> - Leader Behaviors
+> - Culture
+> - Varying Patterns of Work Demands
+
+---
+
+## Individual Differences
+
+> - Ability
+> - Time Management Skills
+> - Negative Affectivity
+
+---
+
+## Effects on Employee Well Being
+
+---
+
+## Psychological Strains
+
+```{r echo=FALSE, results='asis', comment=NA, message=FALSE}
+require(MASS)
+rmat <- matrix(c(1.0, .40, .21, .46, .40, 1.0, .30, .25, .21, .30, 1.0, .10, .46, .25, .10, 1.0), nrow = 4, byrow = T)
+mu <- c(0,0,0,0)
+mat <- data.frame(mvrnorm(200, Sigma = rmat, mu = mu, empirical = TRUE))
+names(mat) <- c("Workload", "Anxiety", "Depression", "Frustration")
+require(rCharts)
+r1 <- rPlot(Anxiety ~ Workload, data = mat, type="point")
+r1$addControls("x", "Workload", names(mat))
+r1$addControls("y", "Anxiety", names(mat))
+r1$print('chart1')
+```
+
+---
+
+## Physical Strains
+
+> - Physical Health Symptoms 
+
+---
+
+## Effects on Employee Behavior
+
+> - In-Role Job Performance
+> - OCBs
+> - CWBs
+> - Withdrawal
+
+---
+
+## Combating Organizational Problems
+
+> - Selection
+> - Training
+> - Job Redesign
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Task Stressors</title>
+  <meta name="description" content="">
+  <meta name="author" content="Shane Curtis">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "libraries/widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='class1' data-state='' id='id1'>
+  <h2>Overview</h2>
+  <ol class = "build incremental">
+<li>What are Task Stressors?</li>
+<li>How do they differ from other types of stressors?</li>
+<li>Research Framework</li>
+<li>Research Findings</li>
+</ol>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>What are Task Stressors?</h2>
+  <ul class = "build incremental">
+<li>Workload
+
+<ul>
+<li>Quantitative vs. Qualitative</li>
+<li>Mental vs. Physical</li>
+<li>Objective vs. Perceived</li>
+<li>Naturally-occuring vs. Experimentally-manipulated</li>
+</ul></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Quantitative vs. Qualitative</h2>
+  <ul class = "build incremental">
+<li>Amount</li>
+<li>Difficulty</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>How are they Studied</h2>
+  <ul class = "build incremental">
+<li>Often studied alongside other stressors</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Potential Causes of Excessive Workload</h2>
+  <ul class = "build incremental">
+<li>Work Environment</li>
+<li>Individual Difference</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-6'>
+  <h2>Work Environment</h2>
+  <ul class = "build incremental">
+<li>Leader Behaviors</li>
+<li>Culture</li>
+<li>Varying Patterns of Work Demands</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-7'>
+  <h2>Individual Differences</h2>
+  <ul class = "build incremental">
+<li>Ability</li>
+<li>Time Management Skills</li>
+<li>Negative Affectivity</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-8'>
+  <h2>Effects on Employee Well Being</h2>
+  
+</section>
+<section class='' data-state='' id='slide-9'>
+  <h2>Psychological Strains</h2>
+  <div id = 'chart1' class = 'rChart polycharts'></div>
+
+<div class='container' ng-controller="DemoCtrl" ng-init="drawChart()">
+  <div class='row'>
+    <div class='span3'>
+      <form class='well'>
+        <label><b>Select  x :</b></label>
+            <select ng-model="opts.x.var" 
+          ng-options="ctl for ctl in controls.x.values">   
+            </select><br>
+        <label><b>Select  y :</b></label>
+            <select ng-model="opts.y.var" 
+          ng-options="ctl for ctl in controls.y.values">   
+            </select><br>
+      </form>
+    </div>
+    <div class='span8'>
+      <div class="bs-docs-example">
+        <div id='chart1' class='rChart '>
+          <svg></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type='text/javascript'>
+function DemoCtrl($scope){
+  $scope.chartParams = {
+ "dom": "chart1",
+"width":    700,
+"height":    400,
+"layers": [
+ {
+ "x": "Workload",
+"y": "Anxiety",
+"data": {
+ "Workload": [ -0.7179, -0.89019, 2.4018, 1.5393, 1.6898, 0.86732, 1.5474, -0.81776, -1.4895, -0.46409, 0.5854, 1.1306, -0.41675, -1.8955, 1.1722, -0.48491, 0.90489, 1.3445, 0.15937, -1.5435, 0.80123, 0.2495, -1.3872, 0.16394, 0.45972, -0.74821, -1.719, 1.5324, -0.46223, 0.87651, 0.4659, -0.2114, -1.0811, 0.87406, -1.0793, -0.21769, -0.20637, 0.54336, -0.96838, 2.6412, -0.38678, 0.40376, -0.35824, -0.035516, -0.036852, 0.50599, 0.1964, -0.35422, 0.64686, -0.027361, -1.5832, -0.24039, -0.38288, 2.1657, 0.29777, -1.1734, -0.96063, -0.79652, -2.0283, 1.7446, -0.97811, -1.3811, -0.24879, -0.81129, 0.97948, 0.51603, 3.1573, -1.4813, -1.0265, -2.5859, 2.1251, -1.5669, 0.34271, -0.069291, 0.9298, -0.14459, 0.38893, -1.2146, -0.99055, -0.50379, 0.28929, -1.8588, -0.16108, -0.36697, 0.21839, -0.26101, 0.87423, -0.052799, -0.37797, -0.76593, -0.52714, -0.61206, -0.58152, 1.3105, 0.62854, -0.57006, 0.70528, 0.86237, -0.75166,  2.078, -1.2101, 0.44241, -0.24282, 1.0074, -0.90952, -1.2004, 0.68028, -0.3208, 0.21692, 1.7401, 0.22871, 0.76936, 0.98391, -0.081786, 0.74042, 1.3563, 0.18249, -1.6674, 0.11646, 1.3832, -1.0465, 0.68137, 0.26074, 0.40722, -1.0694, 0.2931, 1.4854, 0.063594, 0.36389, -0.26461, -1.2965, 1.0169, -0.14322, -0.11992, -0.067277, 0.80665, -1.2411, 0.39051, 1.5383, -0.63725, 0.17843, 1.2192, -0.32337, 0.25161, 0.86366, -0.68622, 0.61852, -2.4882, -1.1247, 0.51306, 0.037853, 0.49112, 0.18795, 1.2662, -2.1354, -0.074173, -0.89505, 1.6435, -0.91986, -0.34903, -1.8408, -3.8043e-05, 0.46267, -0.70048, -0.44182, 0.1894, -0.64619, 0.67803, 1.4539, -1.0885, 0.52919, -0.24035, 0.20456, -0.72442, -0.55947, 1.3257, -1.2047, -1.0098, 1.4233, 0.67815, 0.0093858, 0.10085, 0.69935, 1.0177, -0.1537, 0.33527, -0.44856, 1.4705, -0.72192, -0.25818, -0.049956, 0.083914, -0.77841, -0.34159, -0.94375, -1.1303, 0.15749, -0.63331, 0.047954, 0.87471 ],
+"Anxiety": [ 0.9949, -0.47002,  1.059, 0.3587, 0.57862, 1.8743, -0.4871, -0.25218, 0.83878, 0.72648, -0.21499, 0.44237, -0.23018, 0.17845, -0.2256, 0.53653, 0.76853, 1.7121, -0.74009, -0.4578, -0.14127, 0.41159, -0.99761, 1.0771, -0.57631, -0.17191, -1.3843, 0.27393, -0.40657, 1.4028, 0.10984, 0.29283, -1.0682, 0.66472, 0.3627, -0.78379, 0.20728, 1.5849, -0.48751, 1.3944, 1.6952, 1.5323, -0.81641, 0.25457, 1.5634, -2.0475, -0.34464, 0.62452, -0.63449, 0.66898, -0.19754, -0.72495, -0.13559, 0.31255, 1.5187, 0.2981, -1.3021, -0.019309, -0.29448, 1.4441, -0.051228, 0.43697, -2.4965, -0.79409, 0.98553, -1.2371, 0.47975, -1.0719, -0.7741, -0.54572, -0.88708, 0.26694, 0.2425, 0.057574, 1.4748, -0.15351, -0.19219, 0.098731, -1.5289, -0.64512, 0.39696, -0.2361, -0.75195, 0.31353,   0.76, -0.47341, 0.83252, -1.4538, 0.27731, 0.042998, -1.3995, -1.2984, -0.64712, 0.8846, -1.4096, -1.316, -0.50622, -0.2962, 0.76495, 1.0348, -0.84875, 0.90828, 0.49676, 1.0273, 1.1677, -2.3352, -0.95973, 0.97689, 0.4312, 0.69458, -0.84263, -0.47821, -1.0079, 0.84576, 0.11509, 0.98921, -0.15188, -1.6105, -0.43489, -0.080082, -0.79758, 1.1356, 0.88008, 1.1105, 0.38696, 0.50825, 0.69893, 1.0512, 1.6733, 0.2954, -1.3699, 0.85847, 0.86481, -0.70551, -0.84977, -0.39069, -1.5375, -0.042164, -1.1213, 0.24188, -0.55938, 1.3514, 0.01857, -0.70482, 0.61005, -0.86915, 0.19596, -1.6331, -0.69642, 0.3374, -0.91435, 1.6279, -0.71824, 2.0323, -0.34964,  1.545, -1.4058, -0.16228, 1.1529, 0.45112, -1.9488, 0.31036, 0.90626, -1.8751, 0.27977, -2.7346, -0.21411, -1.1824, -0.35118, -0.10047, 1.4132, 0.47992, 0.88362, -1.1877, -0.13491, 0.3339, -1.9296, 0.04806, 1.1374, 1.7312, 1.8646, 0.41859, 1.0327, 0.91149, -0.10156, 1.8288, -2.9167, 1.0031, 0.21345, 0.08654, 0.58751, 1.3756, -2.5415, -1.1498, -0.95353, -1.2003, -0.66562, 0.12885, -0.22399, -0.0023155 ],
+"Depression": [ -0.70324, -0.68927, -0.09059, 0.89776, 0.94556, 1.4683, 0.2054, 0.23385, 1.6222, 0.31477, 1.7254, 0.078784, 0.16101, 1.0575, 2.0221, -0.32434, -0.2406, 0.62011, 0.6627, -1.485, -0.074842, 0.29234, -0.46296, 0.71842, 1.2719, -2.7435, -1.0022, 0.9596, -0.74915, 1.1376, 1.7253, -0.20454, -0.10274, 0.50077, 0.016074, -0.41144, 0.16742, -1.3543, -0.2102, -0.4882, -0.10342, 0.65553, -1.1819, 1.4431, -0.41623, -2.6462, 0.84223, -0.093062, 0.033871, 2.0615, -0.69479, 1.1196, 1.4928, 1.6027, 1.1855, 0.14782, 0.78324, -0.011269, -0.62907, 0.099776, 2.0837, -1.1319, -1.2031, 0.37037, -1.1107, -2.3632, 1.3176, 0.89606, -0.9195, 0.26574, -0.39524, 0.21966, -0.48218, -0.13148, 1.9291, -0.25027, -0.69923, -0.81262, -1.0477, -0.59325, -0.057701, 0.46086, -1.0128, 0.44591, -1.2294, -0.82374, -0.030036, -1.6478, 0.29533, 0.11144, 1.1401, 0.23276, -0.46411, -0.70267, 1.3226, 0.047738, -1.0973, 0.9105, -0.14549, 0.23032, -0.082611, 1.8813, -0.51438, 0.53978, 0.31342, -1.2206, -0.33643, 0.50237, -0.29601, -0.34105, 0.12923, -1.7788, -0.51088, 0.76393, -0.74926,  1.826, -0.20534, -0.78048, -0.40724, -0.20102, -0.13337, -0.46331, 0.66426, 0.71999, 0.79284, 0.12998, -1.1509, -0.58432, 0.15791, 0.34973, -2.0004, 0.44518, -0.022016, -0.9923, -1.4766, 0.83082, -0.91884, 2.3074, 0.63001, 0.3908, -0.31068, 0.95326, 2.0566, 0.20655,  -1.09, -0.10837, -0.65503, -1.2615, -0.99822, -0.14632, -0.25575, 0.16588, -0.26707, -1.0389, -1.2316, -0.83569, -1.627, 1.2004, 0.022793, 0.084495, 0.42087, 0.040708, -0.39777, 0.39757, -0.081995, -2.3323, -0.29211, 1.0662, 1.1815, -0.44142, -0.74649, 0.84953, -0.87017, 0.78933, -1.3662, 1.2345, 0.015915, 0.80548, -0.86167, 2.0101, -0.026311, 0.39019, 1.4332, -0.061462, 1.8849, -0.42848, -2.0988, -0.14188, 0.46252, -0.39738, 2.1534, -1.8494, -0.63929, -1.8284, -0.49014, -1.283, -1.0744, 0.44642, 1.4096, 0.55652 ],
+"Frustration": [ 0.34037, 0.21643, 0.68291, 0.60908, 1.2238, -0.1879, 0.16834, 1.9097, 0.41992, -0.79683, 0.29225, 0.72091, 0.13941, -1.3823, 1.2299, 0.85425, -0.94314, 2.0108, -0.62515, -1.0555, 0.94731, -0.087937, 1.7834, 0.38349, -0.54886, 0.30224, -1.7248, 1.2627, 0.10475, 0.0017732, 0.44436, -0.12663, -0.18952, 1.5414, 0.12388, -0.16191, 1.1637, 0.2143, -0.58201, 1.0553, 0.23543, -0.70961, -2.1217, -1.497, -0.24485, -1.087, 0.47705, -0.63304, 0.58785, -0.063789, -0.71768, 2.0739, 0.17044, 1.6788, 0.048128, -0.86256, -0.12961, -0.30557, -1.7394, 2.5697, -0.46675, 0.077639, 1.0195, -0.25257, 2.8162, 0.036951, 1.5719, -0.060509, 0.54841, -0.64397, 0.76101, -1.2479, 0.52335, 1.6057, 0.43816, -0.0072431, -0.26217, 0.46839, -0.72993, -1.3022, -0.71392, -1.0302, 1.9414, 0.059222, 1.1191, 0.02248, 0.6022, -0.49682, 0.50709, -0.1067, -0.87273, -0.71209, -0.24279, -0.3643, -1.0369, 0.28022, 0.29633, 0.25787, -1.5243, 2.3733, -1.0105, 0.98881, 0.70275, -0.42249, -0.6021, -0.18346, 0.071962, -0.41132, 0.12899, 1.4171, 0.14147, -0.91908, 0.14799, 1.1295, -0.95539, -0.4052, -0.31556, 0.60763, -0.31683, -0.65392, -1.5946, -0.61646, 0.52444, 1.9597, -3.3814, -0.22338, -0.42781, -0.85271,  0.679, -2.1893, -0.01015, -0.46784, -2.1685, 0.0099312, -0.53434, 0.1382, -0.66184, 1.1081, -0.36254, -1.4749, 1.8615, 0.40622, -0.43824, -0.47662, 0.23782, 0.37025, 0.53757, -0.52936, 0.78229, 0.24894, -1.3166, 0.054056, -1.5417, 0.66159, -1.359, 0.85703, 0.060288, 0.85192, -0.60033, -0.33398, -1.4068, -0.9461, 0.39124, -1.0192, 0.33233, 0.53188, -0.13423, 0.68292, -0.10439, -0.94425, -0.17254, -0.51113, 0.9843, -0.22882, -0.36398, 2.4602, -0.60599, -1.4943, 2.0073, 1.2897, 0.60454, -1.5388, 2.0938, 1.8551, -1.1272, -0.28136, -0.93901, 0.12063, 0.32997,  -1.44, -1.0131, 0.23433, -0.27018, -0.64253, -0.89241, -1.7823, 0.59821, 0.30366, -0.40458, -0.20048 ] 
+},
+"facet": null,
+"type": "point" 
+} 
+],
+"facet": [],
+"guides": [],
+"coord": [],
+"id": "chart1" 
+}
+  _.each($scope.chartParams.layers, function(el){
+    el.data = polyjs.data(el.data)
+  })
+      
+  $scope.controls = {
+ "x": {
+ "name": "x",
+"value": "Workload",
+"values": [ "Workload", "Anxiety", "Depression", "Frustration" ],
+"label": "Select  x :" 
+},
+"y": {
+ "name": "y",
+"value": "Anxiety",
+"values": [ "Workload", "Anxiety", "Depression", "Frustration" ],
+"label": "Select  y :" 
+} 
+}
+  $scope.opts = $scope.chartParams.layers[0];
+    
+  $scope.drawChart = function(){
+    $scope.chart = polyjs.chart($scope.chartParams)
+    }
+
+  $scope.updateChart = function(){
+    $scope.chart.make($scope.chartParams)
+    }
+        
+    $scope.$watch('opts', function(){
+      $scope.chartParams.layers[0] = $scope.opts;
+      $scope.updateChart();
+    }, true)
+}
+</script>
+
+</section>
+<section class='' data-state='' id='slide-10'>
+  <h2>Physical Strains</h2>
+  <ul class = "build incremental">
+<li>Physical Health Symptoms </li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-11'>
+  <h2>Effects on Employee Behavior</h2>
+  <ul class = "build incremental">
+<li>In-Role Job Performance</li>
+<li>OCBs</li>
+<li>CWBs</li>
+<li>Withdrawal</li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-12'>
+  <h2>Combating Organizational Problems</h2>
+  <ul class = "build incremental">
+<li>Selection</li>
+<li>Training</li>
+<li>Job Redesign</li>
+</ul>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'moon', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <script>  
+$(function (){ 
+  $("#example").popover(); 
+  $("[rel='tooltip']").tooltip(); 
+});  
+</script>  
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
